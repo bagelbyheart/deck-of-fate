@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Deck of Fate</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      @import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
+      @import url("https://fonts.googleapis.com/css?family=Fira Mono");
+      @import url("https://fonts.googleapis.com/css?family=Fira Sans");
+      @import url("deck_of_fate.css");
+    </style>
+    <script src="deck_of_fate.js"></script>
+  </head>
+  <body onload="fullRoll()">
+    <div>
+      <h1>Deck of Fate</h1>
+      <div class="card" onclick="fullRoll()">
+        <div class="resultblock">
+          <span id="result"></span><br />
+          <span id="flavor"></span>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h2>What is this?</h2>
+      <p>This is about the most basic "Deck of Fate" I could make. Instead of actually generating a deck it just rolls 4d3 under the table and adds the results. This should be functionally equivalent to rolling 4 fate/fudge dice.</p>
+      <p>Click the card to draw another.</p>
+    </div>
+    <div>
+      <h2>Previous Draws</h2>
+      <p id="previous"></p>
+    </div>
+  </body>
+</html>
