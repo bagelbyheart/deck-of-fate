@@ -15,7 +15,7 @@ body {
     margin: auto;
   }
 
-@media screen and (max-width:400px) {
+@media screen and (max-width:640px) {
     body {
         width: 90%;
         margin: auto;
