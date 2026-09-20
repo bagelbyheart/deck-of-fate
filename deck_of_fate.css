@@ -37,9 +37,10 @@ div {
   text-align: center;
   transition: opacity 0.5s;
   display: table;
-  width: 16em;
-  height: 24em;
+  width: 15em;
+  height: 23em;
   border-radius: 1em;
+  padding: 0.5em;
   margin: auto;
 }
 
@@ -53,6 +54,6 @@ div {
 }
 
 #flavor {
-  font-size: 2em;
+  font-size: 1.3em;
 }
 
