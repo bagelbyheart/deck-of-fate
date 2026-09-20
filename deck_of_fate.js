@@ -1,5 +1,6 @@
 let result = null;
 let previous = '';
+let out_text = '';
 let target = document.getElementsByClassName("card");
 
 /*
@@ -97,7 +98,12 @@ async function fullRoll() {
     result = result + roll;
   }
   document.getElementById("result").innerHTML = result;
-  document.getElementById("flavor").innerHTML = results[result]['short'];
+  if (results[result]['text'].length > 0){
+	  out_text = results[result]['text'][randKey(results[result]['text'].length)];
+  } else {
+	  out_text = results[result]['short'];
+  }
+  document.getElementById("flavor").innerHTML = out_text;
   document.getElementById("previous").innerHTML = previous;
   target[0].style.opacity = '1';
 }
