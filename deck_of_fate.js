@@ -4,71 +4,105 @@ let out_text = '';
 let target = document.getElementsByClassName("card");
 
 /*
-Breakdown of flavor text:
--4 = 1
--3 = 2
--2 = 4
--1 = 8
-0  = 16
-+1 = 8
-+2 = 4
-+3 = 2
-+4 = 1
+Breakdown of flavor text (and colors):
+RED
+-4 = 1  # Done
+-3 = 2  # Done
+-2 = 4  # Done
+BLUE
+-1 = 8  # 4/8
+0  = 16 # 4/16
++1 = 8  # 4/8
+GREEN
++2 = 4  # Done
++3 = 2  # Done
++4 = 1  # Done
 */
 
 let results = {
   '-4': {
-    'color': 'red',
+    'color': 'lightcoral',
     'short': 'Awful',
-    'text': [],
+    'text': [ "Sometimes everything comes crashing down"],
     'photo': []
   },
   '-3': {
-    'color': 'red',
+    'color': 'lightcoral',
     'short': 'Terrible',
-    'text': [],
+    'text': [
+      "The important thing is to get back up",
+      "Look, I have other skills"
+    ],
     'photo': []
   },
   '-2': {
-    'color': 'red',
+    'color': 'lightcoral',
     'short': "Bad",
-    'text': ['Um, well'],
+    'text': [
+      "Oof, that looks like it hurts",
+      "You know what they say; try, try again",
+      "Gotta break a few eggs to make an omlette",
+      "Ugh, I just woke up"
+    ],
     'photo': []
   },
   '-1': {
-    'color': 'red',
+    'color': 'lightblue',
     'short': 'Poor',
-    'text': ["Getting there"],
+    'text': [
+      "Getting there",
+      "So close",
+      "We all stumble sometimes",
+      "Eh, better luck next time",
+    ],
     'photo': []
   },
   '0': {
-    'color': 'red',
+    'color': 'lightblue',
     'short': "Mediocre",
-    'text': ["There is a zen in the middle"],
+    'text': [
+      "There is a zen in the middle",
+      "Skill is the only thing that matters",
+      "Sometimes things are just what they are",
+      "The rest is up to you"
+    ],
     'photo': []
   },
   '1': {
-    'color': 'red',
+    'color': 'lightblue',
     'short': 'Average',
-    'text': [],
+    'text': [
+      "One step after another; that's how you get someplace",
+      "Brick by brick, day by day, we build the world",
+      "Life is all about the little silver linings",
+      "A little pebble still makes big ripples"
+    ],
     'photo': []
   },
   '2': {
-    'color': 'red',
+    'color': 'lightgreen',
     'short': 'Fair',
-    'text': [],
+    'text': [
+      "Practice makes perfect ya know",
+      "Not everything requires a genius",
+      "It ain't no thing",
+      "I wake up like this"
+    ],
     'photo': []
   },
   '3': {
-    'color': 'red',
+    'color': 'lightgreen',
     'short': "Good",
-    'text': [],
+    'text': [
+      "I can stand on the head of a pin as well",
+      "JACKPOT!"
+    ],
     'photo': []
   },
   '4': {
-    'color': 'red',
+    'color': 'lightgreen',
     'short': "Great",
-    'text': [],
+    'text': [ "Throughout Heaven and Earth, I alone am the honored one"],
     'photo': []
   }
 }
@@ -106,4 +140,5 @@ async function fullRoll() {
   document.getElementById("flavor").innerHTML = out_text;
   document.getElementById("previous").innerHTML = previous;
   target[0].style.opacity = '1';
+  target[0].style.background = results[result]['color'];
 }
