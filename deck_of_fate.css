@@ -37,10 +37,9 @@ div {
   text-align: center;
   transition: opacity 0.5s;
   display: table;
-  width: 15em;
-  height: 23em;
+  width: 16em;
+  height: 24em;
   border-radius: 1em;
-  padding: 0.5em;
   margin: auto;
   position: relative;
 }
