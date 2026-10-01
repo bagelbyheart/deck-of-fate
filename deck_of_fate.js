@@ -10,9 +10,9 @@ RED
 -3 = 2  # Done
 -2 = 4  # Done
 BLUE
--1 = 8  # 4/8
+-1 = 8  # 6/8
 0  = 16 # 7/16
-+1 = 8  # 4/8
++1 = 8  # 5/8
 GREEN
 +2 = 4  # Done
 +3 = 2  # Done
@@ -54,6 +54,8 @@ let results = {
       "So close",
       "We all stumble sometimes",
       "Eh, better luck next time",
+      "That's not a ... good ... sound",
+      "Watch your step!"
     ],
     'photo': []
   },
@@ -67,7 +69,7 @@ let results = {
       "The rest is up to you",
       "There is no fate but that which we make for ourselves",
       "A perfect point of balance - a fulcrum",
-      "Only the fortunate speak well of destiny. The rest of us make our own way."
+      "Only the fortunate speak well of destiny, the rest of us make our own way"
     ],
     'photo': []
   },
@@ -78,7 +80,8 @@ let results = {
       "One step after another; that's how you get someplace",
       "Brick by brick, day by day, we build the world",
       "Life is all about the little silver linings",
-      "A little pebble still makes big ripples"
+      "A little pebble still makes big ripples",
+      "Like little pieces falling into place"
     ],
     'photo': []
   },
