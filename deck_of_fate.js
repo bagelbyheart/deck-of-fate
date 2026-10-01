@@ -11,7 +11,7 @@ RED
 -2 = 4  # Done
 BLUE
 -1 = 8  # 4/8
-0  = 16 # 4/16
+0  = 16 # 7/16
 +1 = 8  # 4/8
 GREEN
 +2 = 4  # Done
@@ -64,7 +64,10 @@ let results = {
       "There is a zen in the middle",
       "Skill is the only thing that matters",
       "Sometimes things are just what they are",
-      "The rest is up to you"
+      "The rest is up to you",
+      "There is no fate but that which we make for ourselves",
+      "A perfect point of balance - a fulcrum",
+      "Only the fortunate speak well of destiny. The rest of us make our own way."
     ],
     'photo': []
   },
